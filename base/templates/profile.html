@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="profile_div">
+<div>
+    <img class="profile_img" src="/static/images/free-icon-profile-14026766.png">
+    <div class="profile_p"><p class="">Username: <p class="profile_p1">{{ request.user.username }}</p></p></div>
+    <div class="profile_p"><p class="">Email: <p class="profile_p1">{{ request.user.email }}</p></p></div>
+    <div>
+        <p class="login_p1 profile_p2">already have an account?<br><a class="login_a" href="{% url 'log-in' %}">log-in</a></p>
+    </div>
+
+    <div class="signup_div">
+        <p class="login_p1 profile_p2">don’t have an account?<br><a class="login_a" href="{% url 'sign-up' %}">sign-up</a></p>
+    </div>
+    <a class="profile_b" href="{% url 'blog' %}">blog</a>
+</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="create_div">
+<div class="login_div1">
+    <div>
+    <h1 class="login_h1">Welcome</h1>
+                <p class="login_p">let's create a post</p>
+<form method="POST" action="{% url 'create' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="login_div2">
+        <button type="submit" class="login_button">CREATE</button>
+        <div class="signup_div"><p class="login_p1">return to blog page?<br><a class="login_a" href="{% url 'blog' %}">blog</a></p>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</div>
+{% endblock content %}

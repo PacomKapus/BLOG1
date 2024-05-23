@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="readmore_div1">
+    <div class="blog-latest_div3 readmore_div">
+        <div class="blog-latest_div4">
+            <p class="blog-latest_p3 ">{{ post.created_at|date:"d M" }}</p>
+            <p class="blog-latest_p2 readmore_p">{{ post.email }}</p>
+        </div>
+        <div>
+            <h1 class="blog-latest_h readmore_p1">{{ post.name }}</h1>
+            <p class="blog-latest_p1 readmore_p1">{{ post.description|linebreaksbr }}</p>
+            <div class="login_div1 readmore_div1">
+                
+                    <form method="post" action="{% url 'delete_post' post.id %}">
+                        {% csrf_token %}
+                        <button class="blog_button login_button" type="submit">Delete</button>
+                    </form>
+                    <a class="readmore_button" href="{% url 'updatepost' post.id %}">Update Post</a>
+                
+            </div>
+            <div class="login_div2 readmore_a1">
+                <div class="signup_div readmore_a"><p class="login_p1">return to blog page? <a class="login_a search_a readmore_a" href="{% url 'blog' %}"> blog</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

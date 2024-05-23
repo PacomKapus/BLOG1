@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="login_div">
+    <img class="login_img" src="/static/images/Side-Background-Outer (1).png" alt="img">
+        <div class="login_div1">
+            <div>
+                <h1 class="login_h1">Welcome</h1>
+                <p class="login_p">Let’s log you in quickly</p>
+                <form method="POST">
+                    {% if error != '' %}
+                        <div class="errorlist">
+                            {{ error }}
+                        </div>
+                    {% endif %}
+                    {% csrf_token %}
+                    
+                    <input type="email" name="email" placeholder="Enter your email" required/>
+                    <input type="password" name="password" placeholder="Enter your password" required/>
+
+                    <div class="login_div2">
+                        <button type="submit" class="login_button">LOGIN</button>
+                        <div class="signup_div"><p class="login_p1">don’t have an account?<br><a class="login_a" href="{% url 'sign-up' %}">sign-up</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+{% endblock content %}

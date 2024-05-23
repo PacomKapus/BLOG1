@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    background-color:#000000;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+.login_img {
+    width: 413px;
+    height: 641px;
+}
+
+.login_h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family:DM Serif Display;
+    margin: 0;
+}
+
+.login_p {
+    font-size: 24px;
+    color: #A5A5A5;
+    font-family: Lexend Deca;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.login_p1 {
+    color: #FFFFFF;
+}
+
+.login_div {
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+}
+
+.login_div1 {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.login_div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 600px;
+    height: 60px;
+    background-color: #272727;
+    color: #A5A5A5;
+    font-size: 16px;
+    border: 1px solid #6EEB83;
+    margin-bottom: 22px;
+    padding-left: 25px;
+    transition: 1s;
+}
+
+input:hover {
+    background-color: #6EEB83;
+    color: #000000;
+}
+
+.login_input:hover::placeholder {
+    color: #000000;
+}
+
+.login_button {
+    color: #000000;
+    background-color: #6EEB83;
+    transition: 5s;
+    border: none;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    font-family: Lexend Deca;
+    font-weight: 900;
+    border: 1px solid transparent;
+    transition: border-color 5s,color 5s,background-color 5s;
+}
+
+.login_button:hover {
+    color: #6EEB83;
+    background-color: #000000;
+    border-color: #6EEB83 ;
+}
+
+.login_a {
+    color: #6EEB83;
+    text-decoration: none;
+}
+
+.signup_div {
+    margin-right: 30px;
+}
+
+.errorlist {
+    top: 44px ;
+    left: 843px;
+    list-style-type: none;
+    position: absolute;
+    width: 364px;
+    height: 80px;
+    font-size: 16px;
+    background-color: #FF5E5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.blog_div {
+    background-color: #000000;
+    display: flex;
+    color: #FFFFFF;
+}
+
+.blog_div1 {
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #6EEB83;
+    min-width: 95px;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.blog_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.blog_div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.blog_div4 {
+    margin: 77.5px 0;
+}
+
+.blog_h {
+    width: 66px;
+    height: 66px;
+    border-radius: 66px;
+    color: #000000;
+    background-color: #6EEB83;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend Deca;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.blog_p {
+    font-family: Lexend Deca;
+    font-size: 16px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.blog_a {
+    text-decoration: none;
+}
+
+.blog_button {
+    margin-top: 100px;
+    margin-bottom: 8px;
+}
+
+.blog-latest_div{
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 75px;
+}
+
+.blog-latest_div2 {
+    width: 89.2%;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.blog-latest_div2-0{
+    position: fixed;
+}
+
+.blog-latest_div1 {
+    width: 20px;
+    height: 4px;
+    background-color: #6EEB83;
+    margin-bottom: 3px;
+    margin-left: 14.44px;
+}
+
+.blog-latest_div3 {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    color: #FFFFFF;
+}
+
+.blog-latest_div4 {
+    margin-right: 20px;
+    max-width: 100px;
+}
+
+.blog-latest_p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.blog-latest_p1 {
+    font-size: 20px;
+}
+
+.blog-latest_h {
+    font-size: 32px;
+    color: #6EEB83;
+    margin-bottom: 19px;
+    word-wrap: break-word;
+}
+
+.blog-latest_p2 {
+    transform: rotate(-90deg);
+    margin-left: 35px;
+    margin-top: 100px;
+}
+
+.blog-latest_p3 {
+    max-width: 73px;
+    text-align: end;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.blog-latest_a {
+    color: #6EEB83;
+    text-decoration: none;
+}
+
+.create_div {
+    background-color: #272727;
+    height: 571px;
+    padding-top: 70px;
+}
+
+.trending_h {
+    color: #FFFFFF;
+    margin-top: 100%;
+}
+
+.search_a {
+    margin-left: 95px;
+}
+
+.readmore_div {
+    padding-top: 100px;
+}
+
+.readmore_p {
+    margin-top: 150px;
+}
+
+.readmore_p1 {
+    text-align: center;
+}
+
+.readmore_a {
+    margin: 0;
+}
+
+.profile_div {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.profile_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_p1 {
+    color: #6EEB83;
+    font-size: 35px;
+}
+
+.profile_p2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profile_b {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.profile_img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.readmore_button {
+    color: #000000;
+    background-color: #6EEB83;
+    text-decoration: none;
+    transition: 5s;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 1px solid transparent;
+    transition: border-color 5s,color 5s,background-color 5s;
+}
+
+.readmore_button:hover {
+    color: #6EEB83;
+    background-color: #000000;
+    border-color: #6EEB83;
+}
+
+.readmore_div1 {
+    justify-content: space-between;
+}
+
+.readmore_a1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.update_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+ 
+.update_h1 {
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.update_button {
+    margin-top: 50px;
+}
+
+.search_div {
+    background-color: #FFFFFF;
+}
+
+.search-input {
+    width: 300px;
+    height: 30px;
+    margin-top: 100px;
+    margin-left: 750px;
+}
+
+.form_search {
+    position: absolute;
+}
+
+.search_button {
+    width: 60px;
+    height: 30px;
+    color: #6EEB83;
+    background-color: #000000;
+    border: 1px solid #6EEB83;
+}

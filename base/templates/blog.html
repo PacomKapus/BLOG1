@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="blog_div">
+    <div class="blog_div1">
+        <div>
+            
+            <a href="{% url 'profile' %}" class="blog_h">{{ request.user.username|first|default:"" }}</a>
+            <div class="blog_div2">
+                    <a class="blog_a" href="#search">
+                        <div class="blog_div3"><img src="/static/images/search (2).png" alt="img"></div>
+                        <p class="blog_p">search</p>
+                    </a>
+            </div>
+            <div class="blog_div2">
+                <a class="blog_a" href="{% url 'trending' %}">
+                    <div class="blog_div3"><img src="/static/images/trending_up.png" alt="img"></div>
+                    <p class="blog_p">trending</p>
+                </a>
+            </div>
+            <div class="blog_div2 blog_div4">
+                <a class="blog_a" href="{% url 'create' %}">
+                    <div class="blog_div3"><img src="/static/images/add_circle.png" alt="img"></div>
+                    <p class="blog_p">create</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="blog-latest_div">
+        <form class="form_search" method="GET" action="{% url 'blog' %}">
+            <input class="search-input" type="search" placeholder="Serch" name="search">
+            <button class="search_button" id="search" type="submit">Search</button>
+        </form>
+        <div class="blog-latest_div2">
+            <div class="blog-latest_div2-0">
+                <div class="blog-latest_div1"></div>
+                <p class="blog-latest_p">Latest</p>
+            </div>
+        </div>
+        {% for post in posts %}
+        <div class="blog-latest_div3">
+            <div class="blog-latest_div4">
+                <p class="blog-latest_p3">{{ post.created_at|date:"d M" }}</p>
+                <p class="blog-latest_p2">{{ post.email }}</p>
+            </div>
+            <div>
+                <h1 class="blog-latest_h">{{ post.name }}</h1>
+                <p class="blog-latest_p1">{{ post.description|slice:1300 }}<a class="blog-latest_a" href="{% url 'read-more' post_id=post.id %}"> ...read more</a></p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
